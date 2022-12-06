@@ -15,7 +15,10 @@ const Login = () => {
     const navigate = useNavigate()
 
     const responseGoogle = (response) => {
-        const { name, sub, picture } = jwt_decode(response.credential)
+        const user = jwt_decode(response.credential)
+        localStorage.setItem('user', JSON.stringify(user))
+
+        const { name, sub, picture } = user;
 
         const doc = {
             _id: sub,
