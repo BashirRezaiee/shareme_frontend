@@ -11,7 +11,7 @@ const breakPointObj = {
   500: 1
 }
 
-const MesonryLayout = ({ pins }) => {
+const MasonryLayout = ({ pins }) => {
   return (
     <div>
       <Masonry className='flex animate-slide-fwd' breakpointCols={breakPointObj}>
@@ -21,4 +21,4 @@ const MesonryLayout = ({ pins }) => {
   )
 }
 
-export default MesonryLayout
+export default MasonryLayout
