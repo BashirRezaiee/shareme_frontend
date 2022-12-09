@@ -10,8 +10,8 @@ function App() {
 
   useEffect(() => {
     const user = fetchUser();
-
     if (!user) navigate('/login');
+    // eslint-disable-next-line
   }, [])
 
 

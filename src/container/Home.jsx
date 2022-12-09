@@ -25,6 +25,7 @@ const Home = () => {
       .then((data) => {
         setUser(data[0])
       })
+    // eslint-disable-next-line
   }, [])
 
   useEffect(() => {
